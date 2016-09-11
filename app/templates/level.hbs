@@ -1,0 +1,69 @@
+<h1>level {{model.id}}</h1>
+<h4>Reach the number {{model.goalNumber}} in the least number of clicks, without going over.</h4>
+
+Turns Spent: {{turns}}
+
+<div class="row">
+    <center>
+        <span class="col-xs-2 col-xs-offset-5">
+            <div class="panel panel-default">
+                <div class="panel-header">
+                    Decimal
+                </div>
+                <div class="panel-body">
+                    <span class="text-lg">{{currentNumber}}</span>
+                </div>
+            </div>
+        </span>
+    </center>
+</div>
+
+
+<div class="row">
+    <center>
+        <span class="col-xs-2 col-xs-offset-5">
+            {{#if beat}}
+                <div class="panel panel-success">
+                    <div class="panel-body">
+                        Done!
+                        <button class="btn btn-primary" {{action "loadNextLevel"}}>Next -></button>
+                    </div>
+                </div>
+            {{/if}}
+        </span>
+    </center>
+</div>
+
+<div class="row">
+    <center>
+        <span class="col-xs-2 col-xs-offset-5">
+            {{#if wentOver}}
+                <div class="panel panel-danger">
+                    <div class="panel-body">
+                        Sorry, you went over!
+                    </div>
+                </div>
+            {{/if}}
+        </span>
+    </center>
+</div>
+
+
+<div class="row">
+    <span class="col-xs-3 col-xs-offset-1">
+        <div>Binary</div>
+        <button class="btn btn-primary" {{action "addBinary"}}>Add {{addBinaryNumber}}</button>
+    </span>
+
+    <span class="col-xs-3 col-xs-offset-1">
+        <div>Decimal</div>
+        <button class="btn btn-primary" {{action "addDecimal"}}>Add {{addDecimalNumber}}</button>
+    </span>
+
+    <span class="col-xs-3 col-xs-offset-1">
+        <div>Hexadecimal</div>
+        <button class="btn btn-primary" {{action "addHexadecimal"}}>Add {{addHexadecimalNumber}}</button>
+    </span>
+
+    {{outlet}}
+</div>

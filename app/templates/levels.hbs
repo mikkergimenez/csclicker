@@ -1,0 +1,19 @@
+<h1>
+    Levels
+</h1>
+<ul class="list-unstyled">
+{{#each model as |level|}}
+<li>
+    {{#link-to "level" level}}
+        <span class="col-xs-1">
+            <div class="panel panel-primary panel-hover">
+                <div class="panel-body">
+                    <center><span class="text-primary text-lg">{{level}}</span></center>
+                </div>
+            </div>
+        </span>
+    {{/link-to}}</li>
+{{/each}}
+</ul>
+
+{{outlet}}

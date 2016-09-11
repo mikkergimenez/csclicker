@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('levels');
+  this.route('level',  { path: '/level/:level_id' });
 });
 
 export default Router;
