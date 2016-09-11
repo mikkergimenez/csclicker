@@ -4,7 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'cs-clicker',
     environment: environment,
-    rootURL: '/',
+    baseURL: '/csclicker/',
+    rootURL: '/csclicker/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -39,6 +40,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.rootURL = '/csclicker/'
 
   }
 
