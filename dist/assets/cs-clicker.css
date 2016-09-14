@@ -1,0 +1,11 @@
+.panel-hover:hover{
+    background-color: #337ab7;
+}
+
+.panel-hover:hover .text-primary {
+    color: white
+}
+
+.text-lg {
+    font-size: 1.5em;
+}

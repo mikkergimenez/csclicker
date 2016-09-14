@@ -10,6 +10,14 @@ export default Ember.Controller.extend({
         this.set("currentNumber", this.get("model").startNumber);
     },
 
+    showOne: function() {
+        if (this.get("model").id === 1) {
+            return false;
+        }
+        return true;
+    }.property("model.id"),
+
+
     nextLevel: function() {
         return parseInt(this.get("model").id) + 1;
     }.property("model.id"),
@@ -30,7 +38,7 @@ export default Ember.Controller.extend({
         this.set("wentOver", false);
 
         this.incrementProperty("turns");
-        if (this.get("currentNumber") == this.get("model").goalNumber) {
+        if (this.get("currentNumber") === this.get("model").goalNumber) {
             this.set("beat", true);
         } else if (this.get("currentNumber") > this.get("model").goalNumber) {
             this.set("beat", false);
