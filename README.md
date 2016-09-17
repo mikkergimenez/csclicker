@@ -3,6 +3,13 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## Features to add
+
+* The number you are trying to add to can be either binary, decimal or hexadecimal.
+* There should exist a difficulty slider, which enables the above feature.
+* We should ensure it works in mobile browsers
+* Add link to github repo in menu
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
