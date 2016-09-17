@@ -5,43 +5,48 @@ export default Ember.Route.extend({
         var levels = [
             {
                 id: 1,
-                goalNumber: 1,
                 goalClicks: 1,
+                goalNumber: 1,
+                goalNumberSystem: "decimal",
                 startNumber: 0,
                 binaryMultiplier: 1,
                 decimalMultiplier: 1,
                 hexadecimalMultiplier: 1
             }, {
                 id: 2,
-                goalNumber: 12,
                 goalClicks: 2,
+                goalNumber: 12,
+                goalNumberSystem: "decimal",
                 startNumber: 0,
                 binaryMultiplier: 2,
                 decimalMultiplier: 10,
                 hexadecimalMultiplier: 16
             }, {
                 id: 3,
+                goalClicks: 7,
                 goalNumber: 56,
-                goalClicks: 1,
+                goalNumberSystem: "decimal",
                 startNumber: 0,
                 binaryMultiplier: 2,
                 decimalMultiplier: 10,
                 hexadecimalMultiplier: 16
             }, {
                 id: 4,
+                goalClicks: 9,
                 goalNumber: 472,
-                goalClicks: 1,
+                goalNumberSystem: "decimal",
                 startNumber: 0,
-                binaryMultiplier: 2,
-                decimalMultiplier: 10,
-                hexadecimalMultiplier: 16
+                binaryMultiplier: 4,
+                decimalMultiplier: 20,
+                hexadecimalMultiplier: 128
             }, {
                 id: 5,
+                goalClicks: 9,
                 goalNumber: 547,
-                goalClicks: 1,
+                goalNumberSystem: "decimal",
                 startNumber: 0,
-                binaryMultiplier: 1,
-                decimalMultiplier: 100,
+                binaryMultiplier: 4,
+                decimalMultiplier: 30,
                 hexadecimalMultiplier: 160
             }
         ];

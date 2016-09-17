@@ -1,77 +1,102 @@
-<h1>level {{model.id}}</h1>
-<h4>Reach the number {{model.goalNumber}} in the least number of clicks, without going over.</h4>
+<div class="col-xs-12 col-md-8 col-md-offset-2">
+    <h1>{{levelTitle}}</h1>
+    <h5>Reach the number {{goalNumber}} in the least number of clicks, without going over.</h5>
 
-Turns Spent: {{turns}}
+    Turns Spent: {{turns}}
 
-<div class="row">
-    <center>
-        <span class="col-xs-2 col-xs-offset-5">
-            <div class="panel panel-default">
-                <div class="panel-header">
-                    Decimal
-                </div>
-                <div class="panel-body">
-                    <span class="text-lg">{{currentNumber}}</span>
-                </div>
-            </div>
-        </span>
-    </center>
-</div>
-
-
-<div class="row">
-    <center>
-        <span class="col-xs-2 col-xs-offset-5">
-            {{#if beat}}
-                <div class="panel panel-success">
-                    <div class="panel-body">
-                        <p>Done!</p>
-                        <p><button class="btn btn-primary" {{action "loadNextLevel"}}>Next -></button></p>
+    <div class="row">
+        <center>
+            <span class="col-xs-12 col-md-5 col-md-offset-4">
+                {{#if beat}}
+                    <div class="panel panel-success">
+                        <div class="panel-body">
+                            <p>Done!</p>
+                            <p>
+                                {{#if fewestClicks}}
+                                    You beat this problem in the fewest number of clicks!
+                                {{else}}
+                                    You used {{turns}} clicks but it could have been beaten in {{goalClicks}} clicks.
+                                {{/if}}
+                            </p>
+                            <p><button class="btn btn-primary" {{action "loadNextLevel"}}>Next -></button></p>
+                        </div>
                     </div>
-                </div>
-            {{/if}}
-        </span>
-    </center>
-</div>
+                    {{#unless showOne}}
+                        This was kind of a trick question 1 in binary = 1 in decimal = 1 in hexadecimal.  We'll add an additional button for adding one.
+                    {{/unless}}
+                {{else}}
+                    <center>
+                        <div class="card card-inverse card-primary">
+                            <div class="card-block">
+                                <h5 class="card-title">Goal</h5>
+                                <p class="card-text">Decimal</p>
+                                <p class="card-text">
+                                    <span class="text-lg">{{currentNumber}}</span>
+                                </p>
+                            </div>
+                        </div>
+                    </center>
+                {{/if}}
+            </span>
+        </center>
+    </div>
 
-<div class="row">
-    <center>
-        <span class="col-xs-2 col-xs-offset-5">
-            {{#if wentOver}}
-                <div class="panel panel-danger">
-                    <div class="panel-body">
-                        Sorry, you went over!
+    <div class="row">
+        <center>
+            <span class="col-xs-3 col-xs-offset-5">
+                {{#if wentOver}}
+                    <div class="panel panel-danger">
+                        <div class="panel-body">
+                            Sorry, you went over!
+                        </div>
                     </div>
-                </div>
-            {{/if}}
+                {{/if}}
+            </span>
+        </center>
+    </div>
+
+
+    <div class="row">
+        {{adder-button addNumber=(action "addBinary") number=addBinaryNumber title="Binary" beat=beat}}
+        {{adder-button addNumber=(action "addDecimal") number=addDecimalNumber title="Decimal" beat=beat}}
+        {{adder-button addNumber=(action "addHexadecimal") number=addHexadecimalNumber title="Hexadecimal" beat=beat}}
+        <!--
+        <span class="col-xs-3 col-xs-offset-1">
+            <center>
+                <a class="btn-card" {{action "addDecimal"}} disabled={{beat}}>
+                    <div class="card card-block">
+                        <h5 class="card-title">Decimal</h5>
+                        <p class="card-text">Add {{addDecimalNumber}}</p>
+                    </div>
+                </a>
+            </center>
         </span>
-    </center>
-</div>
 
-
-<div class="row">
-    <span class="col-xs-3 col-xs-offset-1">
-        <div>Binary</div>
-        <button class="btn btn-primary" {{action "addBinary"}} disabled={{beat}}>Add {{addBinaryNumber}}</button>
-    </span>
-
-    <span class="col-xs-3 col-xs-offset-1">
-        <div>Decimal</div>
-        <button class="btn btn-primary" {{action "addDecimal"}} disabled={{beat}}>Add {{addDecimalNumber}}</button>
-    </span>
-
-    <span class="col-xs-3 col-xs-offset-1">
-        <div>Hexadecimal</div>
-        <button class="btn btn-primary" {{action "addHexadecimal"}} disabled={{beat}}>Add {{addHexadecimalNumber}}</button>
-    </span>
-    <br />
-    <br />
-    <br />
-    {{#if showOne}}
-        <span class="col-xs-3 col-xs-offset-5">
-            <button class="btn btn-primary" {{action "addOne"}} disabled={{beat}}>Add 1</button>
+        <span class="col-xs-3 col-xs-offset-1">
+            <center>
+                <a class="btn-card" {{action "addHexadecimal"}} disabled={{beat}}>
+                    <div class="card card-block">
+                        <h5 class="card-title">Hexadecimal</h5>
+                        <p class="card-text">Add {{addHexadecimalNumber}}</p>
+                    </div>
+                </a>
+            </center>
         </span>
-    {{/if}}
-
+        -->
+    </div>
+    <br />
+    <div class="row">
+        {{#if showOne}}
+            <span class="col-xs-3 col-xs-offset-5">
+                <center>
+                    <a class="btn-card" {{action "addOne"}} disabled={{beat}}>
+                        <div class="card card-block">
+                            <p class="card-text">Add 1</p>
+                        </div>
+                    </a>
+                </center>
+            </span>
+        {{/if}}
+    </div>
     {{outlet}}
 </div>

@@ -8,7 +8,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('levels');
-  this.route('level',  { path: '/level/:level_id' });
+  this.route('level', { path: '/level/:level_id' }, function() {
+    this.route('random');
+  });
 });
 
 export default Router;

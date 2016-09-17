@@ -1,0 +1,25 @@
+@import 'bootstrap';
+
+.panel-hover:hover{
+    background-color: #337ab7;
+}
+
+.panel-hover:hover .text-primary {
+    color: white
+}
+
+.text-lg {
+    font-size: 1.5em;
+}
+
+.btn-card:hover .card {
+    color: white;
+    background-color: #9A9A9A;
+    cursor: pointer;
+}
+
+.btn-card:active .card {
+    color: white;
+    background-color: #787878;
+    cursor: pointer;
+}
