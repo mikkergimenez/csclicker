@@ -4676,6 +4676,12 @@ a.text-danger:focus, a.text-danger:hover {
   .hidden-print {
     display: none !important; } }
 
+.main-body {
+  padding: 4rem 1.5rem; }
+
+.navbar-brand {
+  height: 28px; }
+
 .panel-hover:hover {
   background-color: #337ab7; }
 

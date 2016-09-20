@@ -1,12 +1,13 @@
 <div class="col-xs-12 col-md-8 col-md-offset-2">
-    <h1>{{levelTitle}}</h1>
-    <h5>Reach the number {{goalNumber}} in the least number of clicks, without going over.</h5>
-
-    Turns Spent: {{turns}}
+    <h3>{{levelTitle}}</h3>
+    <em>Reach the number {{goalNumber}} in the least number of clicks, without going over.</em>
+    <br>
+    <small><b>Turns Spent:</b> {{turns}}</small>
+    <br>
 
     <div class="row">
         <center>
-            <span class="col-xs-12 col-md-5 col-md-offset-4">
+            <span class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-4">
                 {{#if beat}}
                     <div class="panel panel-success">
                         <div class="panel-body">
@@ -26,9 +27,17 @@
                     {{/unless}}
                 {{else}}
                     <center>
-                        <div class="card card-inverse card-primary">
+                        <div class="card card-inverse card-primary visible-xs">
                             <div class="card-block">
-                                <h5 class="card-title">Goal</h5>
+                                <p class="card-text">Decimal</p>
+                                <p class="card-text">
+                                    <span class="text-lg">{{currentNumber}}</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card card-inverse card-primary hidden-xs">
+                            <div class="card-block">
                                 <p class="card-text">Decimal</p>
                                 <p class="card-text">
                                     <span class="text-lg">{{currentNumber}}</span>
@@ -60,6 +69,34 @@
         {{adder-button addNumber=(action "addBinary") number=addBinaryNumber title="Binary" beat=beat}}
         {{adder-button addNumber=(action "addDecimal") number=addDecimalNumber title="Decimal" beat=beat}}
         {{adder-button addNumber=(action "addHexadecimal") number=addHexadecimalNumber title="Hexadecimal" beat=beat}}
+        <div class="row visible-xs">
+            {{#if showOne}}
+                <span class="col-xs-10 col-xs-offset-1">
+                    <center>
+                        <a class="btn-card" {{action "addOne"}} disabled={{beat}}>
+                            <div class="card card-block">
+                                <p class="card-text">Add 1</p>
+                            </div>
+                        </a>
+                    </center>
+                </span>
+            {{/if}}
+        </div>
+
+        <div class="row hidden-xs">
+            {{#if showOne}}
+                <span class="col-md-3 col-md-offset-5">
+                    <center>
+                        <a class="btn-card" {{action "addOne"}} disabled={{beat}}>
+                            <div class="card card-block">
+                                <p class="card-text">Add 1</p>
+                            </div>
+                        </a>
+                    </center>
+                </span>
+            {{/if}}
+        </div>
+
         <!--
         <span class="col-xs-3 col-xs-offset-1">
             <center>
@@ -85,18 +122,5 @@
         -->
     </div>
     <br />
-    <div class="row">
-        {{#if showOne}}
-            <span class="col-xs-3 col-xs-offset-5">
-                <center>
-                    <a class="btn-card" {{action "addOne"}} disabled={{beat}}>
-                        <div class="card card-block">
-                            <p class="card-text">Add 1</p>
-                        </div>
-                    </a>
-                </center>
-            </span>
-        {{/if}}
-    </div>
     {{outlet}}
 </div>
