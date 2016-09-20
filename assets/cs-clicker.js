@@ -882,12 +882,12 @@ define("cs-clicker/templates/application", ["exports"], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 6,
-              "column": 43
+              "line": 2,
+              "column": 4
             },
             "end": {
-              "line": 6,
-              "column": 69
+              "line": 2,
+              "column": 57
             }
           },
           "moduleName": "cs-clicker/templates/application.hbs"
@@ -898,7 +898,7 @@ define("cs-clicker/templates/application", ["exports"], function (exports) {
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("Home");
+          var el1 = dom.createTextNode("CS Clicker");
           dom.appendChild(el0, el1);
           return el0;
         },
@@ -917,82 +917,12 @@ define("cs-clicker/templates/application", ["exports"], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 7,
-              "column": 43
+              "line": 4,
+              "column": 29
             },
             "end": {
-              "line": 7,
-              "column": 72
-            }
-          },
-          "moduleName": "cs-clicker/templates/application.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("Levels");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes() {
-          return [];
-        },
-        statements: [],
-        locals: [],
-        templates: []
-      };
-    })();
-    var child2 = (function () {
-      return {
-        meta: {
-          "revision": "Ember@2.8.0",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 14,
-              "column": 37
-            },
-            "end": {
-              "line": 14,
-              "column": 80
-            }
-          },
-          "moduleName": "cs-clicker/templates/application.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("Home");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes() {
-          return [];
-        },
-        statements: [],
-        locals: [],
-        templates: []
-      };
-    })();
-    var child3 = (function () {
-      return {
-        meta: {
-          "revision": "Ember@2.8.0",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 15,
-              "column": 37
-            },
-            "end": {
-              "line": 15,
-              "column": 83
+              "line": 4,
+              "column": 75
             }
           },
           "moduleName": "cs-clicker/templates/application.hbs"
@@ -1025,7 +955,7 @@ define("cs-clicker/templates/application", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 25,
+            "line": 10,
             "column": 0
           }
         },
@@ -1038,93 +968,21 @@ define("cs-clicker/templates/application", ["exports"], function (exports) {
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
         var el1 = dom.createElement("nav");
-        dom.setAttribute(el1, "class", "navbar navbar-light navbar-fixed-top");
+        dom.setAttribute(el1, "class", "navbar navbar-dark bg-inverse navbar-fixed-top");
         var el2 = dom.createTextNode("\n    ");
         dom.appendChild(el1, el2);
-        var el2 = dom.createElement("div");
-        dom.setAttribute(el2, "class", "container");
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n    ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("ul");
+        dom.setAttribute(el2, "class", "nav   navbar-nav");
         var el3 = dom.createTextNode("\n        ");
         dom.appendChild(el2, el3);
-        var el3 = dom.createElement("div");
-        dom.setAttribute(el3, "class", "navbar-header");
-        var el4 = dom.createTextNode("\n            ");
+        var el3 = dom.createElement("li");
+        dom.setAttribute(el3, "class", "nav-item");
+        var el4 = dom.createComment("");
         dom.appendChild(el3, el4);
-        var el4 = dom.createElement("button");
-        dom.setAttribute(el4, "type", "button");
-        dom.setAttribute(el4, "class", "navbar-toggle collapsed");
-        dom.setAttribute(el4, "data-toggle", "collapse");
-        dom.setAttribute(el4, "data-target", "#navbar");
-        dom.setAttribute(el4, "aria-expanded", "false");
-        dom.setAttribute(el4, "aria-controls", "navbar");
-        var el5 = dom.createTextNode("\n                ");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createElement("span");
-        dom.setAttribute(el5, "class", "sr-only");
-        var el6 = dom.createTextNode("Toggle navigation");
-        dom.appendChild(el5, el6);
-        dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode("\n                ");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createElement("span");
-        dom.setAttribute(el5, "class", "icon-bar");
-        var el6 = dom.createElement("li");
-        var el7 = dom.createComment("");
-        dom.appendChild(el6, el7);
-        dom.appendChild(el5, el6);
-        dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode("\n                ");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createElement("span");
-        dom.setAttribute(el5, "class", "icon-bar");
-        var el6 = dom.createElement("li");
-        var el7 = dom.createComment("");
-        dom.appendChild(el6, el7);
-        dom.appendChild(el5, el6);
-        dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode("\n            ");
-        dom.appendChild(el4, el5);
-        dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n            ");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createElement("a");
-        dom.setAttribute(el4, "class", "navbar-brand");
-        dom.setAttribute(el4, "href", "#");
-        var el5 = dom.createTextNode("CS Clicker");
-        dom.appendChild(el4, el5);
-        dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n        ");
-        dom.appendChild(el3, el4);
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n        ");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createElement("div");
-        dom.setAttribute(el3, "id", "navbar");
-        dom.setAttribute(el3, "class", "collapse navbar-collapse");
-        var el4 = dom.createTextNode("\n\n            ");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createElement("ul");
-        dom.setAttribute(el4, "class", "nav navbar-nav");
-        var el5 = dom.createTextNode("\n                ");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createElement("li");
-        dom.setAttribute(el5, "class", "nav-item");
-        var el6 = dom.createComment("");
-        dom.appendChild(el5, el6);
-        dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode("\n                ");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createElement("li");
-        dom.setAttribute(el5, "class", "nav-item");
-        var el6 = dom.createComment("");
-        dom.appendChild(el5, el6);
-        dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode("\n            ");
-        dom.appendChild(el4, el5);
-        dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n        ");
-        dom.appendChild(el3, el4);
-        dom.appendChild(el2, el3);
-        var el3 = dom.createComment("/.nav-collapse ");
         dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n    ");
         dom.appendChild(el2, el3);
@@ -1135,14 +993,7 @@ define("cs-clicker/templates/application", ["exports"], function (exports) {
         var el1 = dom.createTextNode("\n");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "page-header");
-        var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "container");
+        dom.setAttribute(el1, "class", "container main-body");
         var el2 = dom.createTextNode("\n    ");
         dom.appendChild(el1, el2);
         var el2 = dom.createComment("");
@@ -1155,20 +1006,16 @@ define("cs-clicker/templates/application", ["exports"], function (exports) {
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [0, 1]);
-        var element1 = dom.childAt(element0, [1, 1]);
-        var element2 = dom.childAt(element0, [3, 1]);
-        var morphs = new Array(5);
-        morphs[0] = dom.createMorphAt(dom.childAt(element1, [3, 0]), 0, 0);
-        morphs[1] = dom.createMorphAt(dom.childAt(element1, [5, 0]), 0, 0);
-        morphs[2] = dom.createMorphAt(dom.childAt(element2, [1]), 0, 0);
-        morphs[3] = dom.createMorphAt(dom.childAt(element2, [3]), 0, 0);
-        morphs[4] = dom.createMorphAt(dom.childAt(fragment, [4]), 1, 1);
+        var element0 = dom.childAt(fragment, [0]);
+        var morphs = new Array(3);
+        morphs[0] = dom.createMorphAt(element0, 1, 1);
+        morphs[1] = dom.createMorphAt(dom.childAt(element0, [3, 1]), 0, 0);
+        morphs[2] = dom.createMorphAt(dom.childAt(fragment, [2]), 1, 1);
         return morphs;
       },
-      statements: [["block", "link-to", ["index"], [], 0, null, ["loc", [null, [6, 43], [6, 69]]]], ["block", "link-to", ["levels"], [], 1, null, ["loc", [null, [7, 43], [7, 72]]]], ["block", "link-to", ["index"], ["class", "nav-link"], 2, null, ["loc", [null, [14, 37], [14, 80]]]], ["block", "link-to", ["levels"], ["class", "nav-link"], 3, null, ["loc", [null, [15, 37], [15, 83]]]], ["content", "outlet", ["loc", [null, [23, 4], [23, 14]]], 0, 0, 0, 0]],
+      statements: [["block", "link-to", ["index"], ["class", "navbar-brand"], 0, null, ["loc", [null, [2, 4], [2, 57]]]], ["block", "link-to", ["levels"], ["class", "nav-link"], 1, null, ["loc", [null, [4, 29], [4, 75]]]], ["content", "outlet", ["loc", [null, [8, 4], [8, 14]]], 0, 0, 0, 0]],
       locals: [],
-      templates: [child0, child1, child2, child3]
+      templates: [child0, child1]
     };
   })());
 });
@@ -1273,7 +1120,7 @@ define("cs-clicker/templates/components/adder-button", ["exports"], function (ex
             "column": 0
           },
           "end": {
-            "line": 11,
+            "line": 25,
             "column": 0
           }
         },
@@ -1285,33 +1132,92 @@ define("cs-clicker/templates/components/adder-button", ["exports"], function (ex
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createElement("span");
-        dom.setAttribute(el1, "class", "col-xs-3 col-xs-offset-1");
+        var el1 = dom.createElement("div");
+        dom.setAttribute(el1, "class", "row visible-xs");
         var el2 = dom.createTextNode("\n    ");
         dom.appendChild(el1, el2);
-        var el2 = dom.createElement("center");
+        var el2 = dom.createElement("span");
+        dom.setAttribute(el2, "class", "col-xs-10 col-xs-offset-1");
         var el3 = dom.createTextNode("\n        ");
         dom.appendChild(el2, el3);
-        var el3 = dom.createElement("a");
-        dom.setAttribute(el3, "class", "btn-card");
+        var el3 = dom.createElement("center");
         var el4 = dom.createTextNode("\n            ");
         dom.appendChild(el3, el4);
-        var el4 = dom.createElement("div");
-        dom.setAttribute(el4, "class", "card card-block");
+        var el4 = dom.createElement("a");
+        dom.setAttribute(el4, "class", "btn-card");
         var el5 = dom.createTextNode("\n                ");
         dom.appendChild(el4, el5);
-        var el5 = dom.createElement("h4");
-        dom.setAttribute(el5, "class", "card-title");
-        var el6 = dom.createComment("");
+        var el5 = dom.createElement("div");
+        dom.setAttribute(el5, "class", "card card-block");
+        var el6 = dom.createTextNode("\n                    ");
+        dom.appendChild(el5, el6);
+        var el6 = dom.createElement("span");
+        dom.setAttribute(el6, "class", "pull-left");
+        var el7 = dom.createElement("b");
+        var el8 = dom.createComment("");
+        dom.appendChild(el7, el8);
+        dom.appendChild(el6, el7);
+        dom.appendChild(el5, el6);
+        var el6 = dom.createTextNode("\n                    ");
+        dom.appendChild(el5, el6);
+        var el6 = dom.createElement("span");
+        dom.setAttribute(el6, "class", "pull-right");
+        var el7 = dom.createTextNode("Add ");
+        dom.appendChild(el6, el7);
+        var el7 = dom.createComment("");
+        dom.appendChild(el6, el7);
+        dom.appendChild(el5, el6);
+        var el6 = dom.createTextNode("\n                ");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("\n            ");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n        ");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n    ");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("div");
+        dom.setAttribute(el1, "class", "hidden-xs");
+        var el2 = dom.createTextNode("\n    ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("span");
+        dom.setAttribute(el2, "class", "col-md-3 col-md-offset-1");
+        var el3 = dom.createTextNode("\n        ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("center");
+        var el4 = dom.createTextNode("\n            ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("a");
+        dom.setAttribute(el4, "class", "btn-card");
         var el5 = dom.createTextNode("\n                ");
         dom.appendChild(el4, el5);
-        var el5 = dom.createElement("p");
-        dom.setAttribute(el5, "class", "card-text");
-        var el6 = dom.createTextNode("Add ");
+        var el5 = dom.createElement("div");
+        dom.setAttribute(el5, "class", "card card-block");
+        var el6 = dom.createTextNode("\n                    ");
         dom.appendChild(el5, el6);
-        var el6 = dom.createComment("");
+        var el6 = dom.createElement("h5");
+        dom.setAttribute(el6, "class", "card-title");
+        var el7 = dom.createComment("");
+        dom.appendChild(el6, el7);
+        dom.appendChild(el5, el6);
+        var el6 = dom.createTextNode("\n                    ");
+        dom.appendChild(el5, el6);
+        var el6 = dom.createElement("p");
+        dom.setAttribute(el6, "class", "card-text");
+        var el7 = dom.createTextNode("Add ");
+        dom.appendChild(el6, el7);
+        var el7 = dom.createComment("");
+        dom.appendChild(el6, el7);
+        dom.appendChild(el5, el6);
+        var el6 = dom.createTextNode("\n                ");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
         var el5 = dom.createTextNode("\n            ");
@@ -1331,16 +1237,22 @@ define("cs-clicker/templates/components/adder-button", ["exports"], function (ex
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [0, 1, 1]);
+        var element0 = dom.childAt(fragment, [0, 1, 1, 1]);
         var element1 = dom.childAt(element0, [1]);
-        var morphs = new Array(4);
+        var element2 = dom.childAt(fragment, [2, 1, 1, 1]);
+        var element3 = dom.childAt(element2, [1]);
+        var morphs = new Array(8);
         morphs[0] = dom.createAttrMorph(element0, 'disabled');
         morphs[1] = dom.createElementMorph(element0);
-        morphs[2] = dom.createMorphAt(dom.childAt(element1, [1]), 0, 0);
+        morphs[2] = dom.createMorphAt(dom.childAt(element1, [1, 0]), 0, 0);
         morphs[3] = dom.createMorphAt(dom.childAt(element1, [3]), 1, 1);
+        morphs[4] = dom.createAttrMorph(element2, 'disabled');
+        morphs[5] = dom.createElementMorph(element2);
+        morphs[6] = dom.createMorphAt(dom.childAt(element3, [1]), 0, 0);
+        morphs[7] = dom.createMorphAt(dom.childAt(element3, [3]), 1, 1);
         return morphs;
       },
-      statements: [["attribute", "disabled", ["get", "beat", ["loc", [null, [3, 60], [3, 64]]], 0, 0, 0, 0], 0, 0, 0, 0], ["element", "action", ["onClick"], [], ["loc", [null, [3, 28], [3, 48]]], 0, 0], ["content", "title", ["loc", [null, [5, 39], [5, 48]]], 0, 0, 0, 0], ["content", "number", ["loc", [null, [6, 41], [6, 51]]], 0, 0, 0, 0]],
+      statements: [["attribute", "disabled", ["get", "beat", ["loc", [null, [4, 64], [4, 68]]], 0, 0, 0, 0], 0, 0, 0, 0], ["element", "action", ["onClick"], [], ["loc", [null, [4, 32], [4, 52]]], 0, 0], ["content", "title", ["loc", [null, [6, 47], [6, 56]]], 0, 0, 0, 0], ["content", "number", ["loc", [null, [7, 49], [7, 59]]], 0, 0, 0, 0], ["attribute", "disabled", ["get", "beat", ["loc", [null, [16, 64], [16, 68]]], 0, 0, 0, 0], 0, 0, 0, 0], ["element", "action", ["onClick"], [], ["loc", [null, [16, 32], [16, 52]]], 0, 0], ["content", "title", ["loc", [null, [18, 43], [18, 52]]], 0, 0, 0, 0], ["content", "number", ["loc", [null, [19, 45], [19, 55]]], 0, 0, 0, 0]],
       locals: [],
       templates: []
     };
@@ -5165,11 +5077,11 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
             "loc": {
               "source": null,
               "start": {
-                "line": 15,
+                "line": 16,
                 "column": 32
               },
               "end": {
-                "line": 17,
+                "line": 18,
                 "column": 32
               }
             },
@@ -5200,11 +5112,11 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
             "loc": {
               "source": null,
               "start": {
-                "line": 17,
+                "line": 18,
                 "column": 32
               },
               "end": {
-                "line": 19,
+                "line": 20,
                 "column": 32
               }
             },
@@ -5234,7 +5146,7 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
             morphs[1] = dom.createMorphAt(fragment, 3, 3, contextualElement);
             return morphs;
           },
-          statements: [["content", "turns", ["loc", [null, [18, 45], [18, 54]]], 0, 0, 0, 0], ["content", "goalClicks", ["loc", [null, [18, 95], [18, 109]]], 0, 0, 0, 0]],
+          statements: [["content", "turns", ["loc", [null, [19, 45], [19, 54]]], 0, 0, 0, 0], ["content", "goalClicks", ["loc", [null, [19, 95], [19, 109]]], 0, 0, 0, 0]],
           locals: [],
           templates: []
         };
@@ -5246,11 +5158,11 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
             "loc": {
               "source": null,
               "start": {
-                "line": 24,
+                "line": 25,
                 "column": 20
               },
               "end": {
-                "line": 26,
+                "line": 27,
                 "column": 20
               }
             },
@@ -5280,11 +5192,11 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 10,
+              "line": 11,
               "column": 16
             },
             "end": {
-              "line": 27,
+              "line": 28,
               "column": 16
             }
           },
@@ -5342,16 +5254,16 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
           return el0;
         },
         buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var element1 = dom.childAt(fragment, [1, 1]);
-          var element2 = dom.childAt(element1, [5, 0]);
+          var element3 = dom.childAt(fragment, [1, 1]);
+          var element4 = dom.childAt(element3, [5, 0]);
           var morphs = new Array(3);
-          morphs[0] = dom.createMorphAt(dom.childAt(element1, [3]), 1, 1);
-          morphs[1] = dom.createElementMorph(element2);
+          morphs[0] = dom.createMorphAt(dom.childAt(element3, [3]), 1, 1);
+          morphs[1] = dom.createElementMorph(element4);
           morphs[2] = dom.createMorphAt(fragment, 3, 3, contextualElement);
           dom.insertBoundary(fragment, null);
           return morphs;
         },
-        statements: [["block", "if", [["get", "fewestClicks", ["loc", [null, [15, 38], [15, 50]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [15, 32], [19, 39]]]], ["element", "action", ["loadNextLevel"], [], ["loc", [null, [21, 63], [21, 89]]], 0, 0], ["block", "unless", [["get", "showOne", ["loc", [null, [24, 30], [24, 37]]], 0, 0, 0, 0]], [], 2, null, ["loc", [null, [24, 20], [26, 31]]]]],
+        statements: [["block", "if", [["get", "fewestClicks", ["loc", [null, [16, 38], [16, 50]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [16, 32], [20, 39]]]], ["element", "action", ["loadNextLevel"], [], ["loc", [null, [22, 63], [22, 89]]], 0, 0], ["block", "unless", [["get", "showOne", ["loc", [null, [25, 30], [25, 37]]], 0, 0, 0, 0]], [], 2, null, ["loc", [null, [25, 20], [27, 31]]]]],
         locals: [],
         templates: [child0, child1, child2]
       };
@@ -5363,11 +5275,11 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 27,
+              "line": 28,
               "column": 16
             },
             "end": {
-              "line": 39,
+              "line": 48,
               "column": 16
             }
           },
@@ -5385,18 +5297,46 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
           var el2 = dom.createTextNode("\n                        ");
           dom.appendChild(el1, el2);
           var el2 = dom.createElement("div");
-          dom.setAttribute(el2, "class", "card card-inverse card-primary");
+          dom.setAttribute(el2, "class", "card card-inverse card-primary visible-xs");
           var el3 = dom.createTextNode("\n                            ");
           dom.appendChild(el2, el3);
           var el3 = dom.createElement("div");
           dom.setAttribute(el3, "class", "card-block");
           var el4 = dom.createTextNode("\n                                ");
           dom.appendChild(el3, el4);
-          var el4 = dom.createElement("h5");
-          dom.setAttribute(el4, "class", "card-title");
-          var el5 = dom.createTextNode("Goal");
+          var el4 = dom.createElement("p");
+          dom.setAttribute(el4, "class", "card-text");
+          var el5 = dom.createTextNode("Decimal");
           dom.appendChild(el4, el5);
           dom.appendChild(el3, el4);
+          var el4 = dom.createTextNode("\n                                ");
+          dom.appendChild(el3, el4);
+          var el4 = dom.createElement("p");
+          dom.setAttribute(el4, "class", "card-text");
+          var el5 = dom.createTextNode("\n                                    ");
+          dom.appendChild(el4, el5);
+          var el5 = dom.createElement("span");
+          dom.setAttribute(el5, "class", "text-lg");
+          var el6 = dom.createComment("");
+          dom.appendChild(el5, el6);
+          dom.appendChild(el4, el5);
+          var el5 = dom.createTextNode("\n                                ");
+          dom.appendChild(el4, el5);
+          dom.appendChild(el3, el4);
+          var el4 = dom.createTextNode("\n                            ");
+          dom.appendChild(el3, el4);
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n                        ");
+          dom.appendChild(el2, el3);
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n\n                        ");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createElement("div");
+          dom.setAttribute(el2, "class", "card card-inverse card-primary hidden-xs");
+          var el3 = dom.createTextNode("\n                            ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("div");
+          dom.setAttribute(el3, "class", "card-block");
           var el4 = dom.createTextNode("\n                                ");
           dom.appendChild(el3, el4);
           var el4 = dom.createElement("p");
@@ -5432,11 +5372,13 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
           return el0;
         },
         buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(1);
-          morphs[0] = dom.createMorphAt(dom.childAt(fragment, [1, 1, 1, 5, 1]), 0, 0);
+          var element2 = dom.childAt(fragment, [1]);
+          var morphs = new Array(2);
+          morphs[0] = dom.createMorphAt(dom.childAt(element2, [1, 1, 3, 1]), 0, 0);
+          morphs[1] = dom.createMorphAt(dom.childAt(element2, [3, 1, 3, 1]), 0, 0);
           return morphs;
         },
-        statements: [["content", "currentNumber", ["loc", [null, [34, 58], [34, 75]]], 0, 0, 0, 0]],
+        statements: [["content", "currentNumber", ["loc", [null, [34, 58], [34, 75]]], 0, 0, 0, 0], ["content", "currentNumber", ["loc", [null, [43, 58], [43, 75]]], 0, 0, 0, 0]],
         locals: [],
         templates: []
       };
@@ -5448,11 +5390,11 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 47,
+              "line": 56,
               "column": 16
             },
             "end": {
-              "line": 53,
+              "line": 62,
               "column": 16
             }
           },
@@ -5497,12 +5439,12 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 89,
-              "column": 8
+              "line": 73,
+              "column": 12
             },
             "end": {
-              "line": 99,
-              "column": 8
+              "line": 83,
+              "column": 12
             }
           },
           "moduleName": "cs-clicker/templates/level.hbs"
@@ -5513,38 +5455,111 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("            ");
+          var el1 = dom.createTextNode("                ");
           dom.appendChild(el0, el1);
           var el1 = dom.createElement("span");
-          dom.setAttribute(el1, "class", "col-xs-3 col-xs-offset-5");
-          var el2 = dom.createTextNode("\n                ");
+          dom.setAttribute(el1, "class", "col-xs-10 col-xs-offset-1");
+          var el2 = dom.createTextNode("\n                    ");
           dom.appendChild(el1, el2);
           var el2 = dom.createElement("center");
-          var el3 = dom.createTextNode("\n                    ");
+          var el3 = dom.createTextNode("\n                        ");
           dom.appendChild(el2, el3);
           var el3 = dom.createElement("a");
           dom.setAttribute(el3, "class", "btn-card");
-          var el4 = dom.createTextNode("\n                        ");
+          var el4 = dom.createTextNode("\n                            ");
           dom.appendChild(el3, el4);
           var el4 = dom.createElement("div");
           dom.setAttribute(el4, "class", "card card-block");
-          var el5 = dom.createTextNode("\n                            ");
+          var el5 = dom.createTextNode("\n                                ");
           dom.appendChild(el4, el5);
           var el5 = dom.createElement("p");
           dom.setAttribute(el5, "class", "card-text");
           var el6 = dom.createTextNode("Add 1");
           dom.appendChild(el5, el6);
           dom.appendChild(el4, el5);
-          var el5 = dom.createTextNode("\n                        ");
+          var el5 = dom.createTextNode("\n                            ");
           dom.appendChild(el4, el5);
           dom.appendChild(el3, el4);
-          var el4 = dom.createTextNode("\n                    ");
+          var el4 = dom.createTextNode("\n                        ");
           dom.appendChild(el3, el4);
           dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n                ");
+          var el3 = dom.createTextNode("\n                    ");
           dom.appendChild(el2, el3);
           dom.appendChild(el1, el2);
-          var el2 = dom.createTextNode("\n            ");
+          var el2 = dom.createTextNode("\n                ");
+          dom.appendChild(el1, el2);
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var element1 = dom.childAt(fragment, [1, 1, 1]);
+          var morphs = new Array(2);
+          morphs[0] = dom.createAttrMorph(element1, 'disabled');
+          morphs[1] = dom.createElementMorph(element1);
+          return morphs;
+        },
+        statements: [["attribute", "disabled", ["get", "beat", ["loc", [null, [76, 75], [76, 79]]], 0, 0, 0, 0], 0, 0, 0, 0], ["element", "action", ["addOne"], [], ["loc", [null, [76, 44], [76, 63]]], 0, 0]],
+        locals: [],
+        templates: []
+      };
+    })();
+    var child4 = (function () {
+      return {
+        meta: {
+          "revision": "Ember@2.8.0",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 87,
+              "column": 12
+            },
+            "end": {
+              "line": 97,
+              "column": 12
+            }
+          },
+          "moduleName": "cs-clicker/templates/level.hbs"
+        },
+        isEmpty: false,
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("                ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("span");
+          dom.setAttribute(el1, "class", "col-md-3 col-md-offset-5");
+          var el2 = dom.createTextNode("\n                    ");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createElement("center");
+          var el3 = dom.createTextNode("\n                        ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("a");
+          dom.setAttribute(el3, "class", "btn-card");
+          var el4 = dom.createTextNode("\n                            ");
+          dom.appendChild(el3, el4);
+          var el4 = dom.createElement("div");
+          dom.setAttribute(el4, "class", "card card-block");
+          var el5 = dom.createTextNode("\n                                ");
+          dom.appendChild(el4, el5);
+          var el5 = dom.createElement("p");
+          dom.setAttribute(el5, "class", "card-text");
+          var el6 = dom.createTextNode("Add 1");
+          dom.appendChild(el5, el6);
+          dom.appendChild(el4, el5);
+          var el5 = dom.createTextNode("\n                            ");
+          dom.appendChild(el4, el5);
+          dom.appendChild(el3, el4);
+          var el4 = dom.createTextNode("\n                        ");
+          dom.appendChild(el3, el4);
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n                    ");
+          dom.appendChild(el2, el3);
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n                ");
           dom.appendChild(el1, el2);
           dom.appendChild(el0, el1);
           var el1 = dom.createTextNode("\n");
@@ -5558,7 +5573,7 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
           morphs[1] = dom.createElementMorph(element0);
           return morphs;
         },
-        statements: [["attribute", "disabled", ["get", "beat", ["loc", [null, [92, 71], [92, 75]]], 0, 0, 0, 0], 0, 0, 0, 0], ["element", "action", ["addOne"], [], ["loc", [null, [92, 40], [92, 59]]], 0, 0]],
+        statements: [["attribute", "disabled", ["get", "beat", ["loc", [null, [90, 75], [90, 79]]], 0, 0, 0, 0], 0, 0, 0, 0], ["element", "action", ["addOne"], [], ["loc", [null, [90, 44], [90, 63]]], 0, 0]],
         locals: [],
         templates: []
       };
@@ -5573,7 +5588,7 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 103,
+            "line": 127,
             "column": 0
           }
         },
@@ -5589,13 +5604,13 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
         dom.setAttribute(el1, "class", "col-xs-12 col-md-8 col-md-offset-2");
         var el2 = dom.createTextNode("\n    ");
         dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h1");
+        var el2 = dom.createElement("h3");
         var el3 = dom.createComment("");
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
         var el2 = dom.createTextNode("\n    ");
         dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h5");
+        var el2 = dom.createElement("em");
         var el3 = dom.createTextNode("Reach the number ");
         dom.appendChild(el2, el3);
         var el3 = dom.createComment("");
@@ -5603,9 +5618,25 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
         var el3 = dom.createTextNode(" in the least number of clicks, without going over.");
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n\n    Turns Spent: ");
+        var el2 = dom.createTextNode("\n    ");
         dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
+        var el2 = dom.createElement("br");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n    ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("small");
+        var el3 = dom.createElement("b");
+        var el4 = dom.createTextNode("Turns Spent:");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode(" ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createComment("");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n    ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("br");
         dom.appendChild(el1, el2);
         var el2 = dom.createTextNode("\n\n    ");
         dom.appendChild(el1, el2);
@@ -5617,7 +5648,7 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
         var el4 = dom.createTextNode("\n            ");
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("span");
-        dom.setAttribute(el4, "class", "col-xs-12 col-md-5 col-md-offset-4");
+        dom.setAttribute(el4, "class", "col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-4");
         var el5 = dom.createTextNode("\n");
         dom.appendChild(el4, el5);
         var el5 = dom.createComment("");
@@ -5673,6 +5704,28 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
         dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n        ");
         dom.appendChild(el2, el3);
+        var el3 = dom.createElement("div");
+        dom.setAttribute(el3, "class", "row visible-xs");
+        var el4 = dom.createTextNode("\n");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createComment("");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("        ");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n\n        ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("div");
+        dom.setAttribute(el3, "class", "row hidden-xs");
+        var el4 = dom.createTextNode("\n");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createComment("");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("        ");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n\n        ");
+        dom.appendChild(el2, el3);
         var el3 = dom.createComment("\n        <span class=\"col-xs-3 col-xs-offset-1\">\n            <center>\n                <a class=\"btn-card\" {{action \"addDecimal\"}} disabled={{beat}}>\n                    <div class=\"card card-block\">\n                        <h5 class=\"card-title\">Decimal</h5>\n                        <p class=\"card-text\">Add {{addDecimalNumber}}</p>\n                    </div>\n                </a>\n            </center>\n        </span>\n\n        <span class=\"col-xs-3 col-xs-offset-1\">\n            <center>\n                <a class=\"btn-card\" {{action \"addHexadecimal\"}} disabled={{beat}}>\n                    <div class=\"card card-block\">\n                        <h5 class=\"card-title\">Hexadecimal</h5>\n                        <p class=\"card-text\">Add {{addHexadecimalNumber}}</p>\n                    </div>\n                </a>\n            </center>\n        </span>\n        ");
         dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n    ");
@@ -5681,17 +5734,6 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
         var el2 = dom.createTextNode("\n    ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("br");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n    ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("div");
-        dom.setAttribute(el2, "class", "row");
-        var el3 = dom.createTextNode("\n");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createComment("");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("    ");
-        dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
         var el2 = dom.createTextNode("\n    ");
         dom.appendChild(el1, el2);
@@ -5705,24 +5747,25 @@ define("cs-clicker/templates/level", ["exports"], function (exports) {
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element3 = dom.childAt(fragment, [0]);
-        var element4 = dom.childAt(element3, [11]);
-        var morphs = new Array(10);
-        morphs[0] = dom.createMorphAt(dom.childAt(element3, [1]), 0, 0);
-        morphs[1] = dom.createMorphAt(dom.childAt(element3, [3]), 1, 1);
-        morphs[2] = dom.createMorphAt(element3, 5, 5);
-        morphs[3] = dom.createMorphAt(dom.childAt(element3, [7, 1, 1]), 1, 1);
-        morphs[4] = dom.createMorphAt(dom.childAt(element3, [9, 1, 1]), 1, 1);
-        morphs[5] = dom.createMorphAt(element4, 1, 1);
-        morphs[6] = dom.createMorphAt(element4, 3, 3);
-        morphs[7] = dom.createMorphAt(element4, 5, 5);
-        morphs[8] = dom.createMorphAt(dom.childAt(element3, [15]), 1, 1);
-        morphs[9] = dom.createMorphAt(element3, 17, 17);
+        var element5 = dom.childAt(fragment, [0]);
+        var element6 = dom.childAt(element5, [15]);
+        var morphs = new Array(11);
+        morphs[0] = dom.createMorphAt(dom.childAt(element5, [1]), 0, 0);
+        morphs[1] = dom.createMorphAt(dom.childAt(element5, [3]), 1, 1);
+        morphs[2] = dom.createMorphAt(dom.childAt(element5, [7]), 2, 2);
+        morphs[3] = dom.createMorphAt(dom.childAt(element5, [11, 1, 1]), 1, 1);
+        morphs[4] = dom.createMorphAt(dom.childAt(element5, [13, 1, 1]), 1, 1);
+        morphs[5] = dom.createMorphAt(element6, 1, 1);
+        morphs[6] = dom.createMorphAt(element6, 3, 3);
+        morphs[7] = dom.createMorphAt(element6, 5, 5);
+        morphs[8] = dom.createMorphAt(dom.childAt(element6, [7]), 1, 1);
+        morphs[9] = dom.createMorphAt(dom.childAt(element6, [9]), 1, 1);
+        morphs[10] = dom.createMorphAt(element5, 19, 19);
         return morphs;
       },
-      statements: [["content", "levelTitle", ["loc", [null, [2, 8], [2, 22]]], 0, 0, 0, 0], ["content", "goalNumber", ["loc", [null, [3, 25], [3, 39]]], 0, 0, 0, 0], ["content", "turns", ["loc", [null, [5, 17], [5, 26]]], 0, 0, 0, 0], ["block", "if", [["get", "beat", ["loc", [null, [10, 22], [10, 26]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [10, 16], [39, 23]]]], ["block", "if", [["get", "wentOver", ["loc", [null, [47, 22], [47, 30]]], 0, 0, 0, 0]], [], 2, null, ["loc", [null, [47, 16], [53, 23]]]], ["inline", "adder-button", [], ["addNumber", ["subexpr", "action", ["addBinary"], [], ["loc", [null, [60, 33], [60, 53]]], 0, 0], "number", ["subexpr", "@mut", [["get", "addBinaryNumber", ["loc", [null, [60, 61], [60, 76]]], 0, 0, 0, 0]], [], [], 0, 0], "title", "Binary", "beat", ["subexpr", "@mut", [["get", "beat", ["loc", [null, [60, 97], [60, 101]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [60, 8], [60, 103]]], 0, 0], ["inline", "adder-button", [], ["addNumber", ["subexpr", "action", ["addDecimal"], [], ["loc", [null, [61, 33], [61, 54]]], 0, 0], "number", ["subexpr", "@mut", [["get", "addDecimalNumber", ["loc", [null, [61, 62], [61, 78]]], 0, 0, 0, 0]], [], [], 0, 0], "title", "Decimal", "beat", ["subexpr", "@mut", [["get", "beat", ["loc", [null, [61, 100], [61, 104]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [61, 8], [61, 106]]], 0, 0], ["inline", "adder-button", [], ["addNumber", ["subexpr", "action", ["addHexadecimal"], [], ["loc", [null, [62, 33], [62, 58]]], 0, 0], "number", ["subexpr", "@mut", [["get", "addHexadecimalNumber", ["loc", [null, [62, 66], [62, 86]]], 0, 0, 0, 0]], [], [], 0, 0], "title", "Hexadecimal", "beat", ["subexpr", "@mut", [["get", "beat", ["loc", [null, [62, 112], [62, 116]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [62, 8], [62, 118]]], 0, 0], ["block", "if", [["get", "showOne", ["loc", [null, [89, 14], [89, 21]]], 0, 0, 0, 0]], [], 3, null, ["loc", [null, [89, 8], [99, 15]]]], ["content", "outlet", ["loc", [null, [101, 4], [101, 14]]], 0, 0, 0, 0]],
+      statements: [["content", "levelTitle", ["loc", [null, [2, 8], [2, 22]]], 0, 0, 0, 0], ["content", "goalNumber", ["loc", [null, [3, 25], [3, 39]]], 0, 0, 0, 0], ["content", "turns", ["loc", [null, [5, 31], [5, 40]]], 0, 0, 0, 0], ["block", "if", [["get", "beat", ["loc", [null, [11, 22], [11, 26]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [11, 16], [48, 23]]]], ["block", "if", [["get", "wentOver", ["loc", [null, [56, 22], [56, 30]]], 0, 0, 0, 0]], [], 2, null, ["loc", [null, [56, 16], [62, 23]]]], ["inline", "adder-button", [], ["addNumber", ["subexpr", "action", ["addBinary"], [], ["loc", [null, [69, 33], [69, 53]]], 0, 0], "number", ["subexpr", "@mut", [["get", "addBinaryNumber", ["loc", [null, [69, 61], [69, 76]]], 0, 0, 0, 0]], [], [], 0, 0], "title", "Binary", "beat", ["subexpr", "@mut", [["get", "beat", ["loc", [null, [69, 97], [69, 101]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [69, 8], [69, 103]]], 0, 0], ["inline", "adder-button", [], ["addNumber", ["subexpr", "action", ["addDecimal"], [], ["loc", [null, [70, 33], [70, 54]]], 0, 0], "number", ["subexpr", "@mut", [["get", "addDecimalNumber", ["loc", [null, [70, 62], [70, 78]]], 0, 0, 0, 0]], [], [], 0, 0], "title", "Decimal", "beat", ["subexpr", "@mut", [["get", "beat", ["loc", [null, [70, 100], [70, 104]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [70, 8], [70, 106]]], 0, 0], ["inline", "adder-button", [], ["addNumber", ["subexpr", "action", ["addHexadecimal"], [], ["loc", [null, [71, 33], [71, 58]]], 0, 0], "number", ["subexpr", "@mut", [["get", "addHexadecimalNumber", ["loc", [null, [71, 66], [71, 86]]], 0, 0, 0, 0]], [], [], 0, 0], "title", "Hexadecimal", "beat", ["subexpr", "@mut", [["get", "beat", ["loc", [null, [71, 112], [71, 116]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [71, 8], [71, 118]]], 0, 0], ["block", "if", [["get", "showOne", ["loc", [null, [73, 18], [73, 25]]], 0, 0, 0, 0]], [], 3, null, ["loc", [null, [73, 12], [83, 19]]]], ["block", "if", [["get", "showOne", ["loc", [null, [87, 18], [87, 25]]], 0, 0, 0, 0]], [], 4, null, ["loc", [null, [87, 12], [97, 19]]]], ["content", "outlet", ["loc", [null, [125, 4], [125, 14]]], 0, 0, 0, 0]],
       locals: [],
-      templates: [child0, child1, child2, child3]
+      templates: [child0, child1, child2, child3, child4]
     };
   })());
 });
@@ -5797,7 +5840,7 @@ define("cs-clicker/templates/levels", ["exports"], function (exports) {
             var el1 = dom.createTextNode("        ");
             dom.appendChild(el0, el1);
             var el1 = dom.createElement("span");
-            dom.setAttribute(el1, "class", "col-xs-1");
+            dom.setAttribute(el1, "class", "col-xs-3 col-sm-2 col-md-1");
             var el2 = dom.createTextNode("\n            ");
             dom.appendChild(el1, el2);
             var el2 = dom.createElement("div");
@@ -5971,7 +6014,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("cs-clicker/app")["default"].create({"name":"cs-clicker","version":"0.0.0+9eb7f40b"});
+  require("cs-clicker/app")["default"].create({"name":"cs-clicker","version":"0.0.0+3e1754f8"});
 }
 
 /* jshint ignore:end */
