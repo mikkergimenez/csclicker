@@ -51,5 +51,22 @@ export default Ember.Route.extend({
             }
         ];
         return levels[params.level_id - 1];
+    },
+
+    setupController: function(controller, model) {
+        console.log(model);
+        console.log("Setting Up Controller");
+        if (!model) {
+            console.log("No Model, Geting New Adders");
+            controller.getNewAdders();
+        } else {
+            controller.set("model", model);
+        }
+    },
+
+    actions: {
+        willTransition: function(transition) {
+            this.controllerFor("level").set("beat", false);
+        }
     }
 });
