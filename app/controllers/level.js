@@ -133,12 +133,12 @@ export default Ember.Controller.extend({
                     continue;
                 } else if (workingGoalNumber + secondLargest < this.get("goalNumber")) {
                     num_clicks += 1;
-                    workingGoalNumber += secondLargest
+                    workingGoalNumber += secondLargest;
                     console.log("Hitting Second Continue " + workingGoalNumber + " " + secondLargest + " " + this.get("goalNumber"));
                     continue;
                 } else if (workingGoalNumber + thirdLargest < this.get("goalNumber")) {
                     num_clicks += 1;
-                    workingGoalNumber += thirdLargest
+                    workingGoalNumber += thirdLargest;
                     console.log("Hitting Third Continue " + workingGoalNumber + " " + thirdLargest + " " + this.get("goalNumber"));
                     continue;
                 } else {
@@ -150,7 +150,7 @@ export default Ember.Controller.extend({
             } while (workingGoalNumber < this.get("goalNumber"));
 
             threeNumbersFinal.sort(function() {
-                return .5 - Math.random();
+                return 0.5 - Math.random();
             });
 
             console.log("Your goal should be " + num_clicks);
