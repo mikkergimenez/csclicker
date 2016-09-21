@@ -90,28 +90,24 @@ export default Ember.Controller.extend({
         return this.get("hexadecimalNumber").toString(16);
     }.property("model.hexadecimalMultiplier", "hexadecimalNumber"),
 
+    noZeros: function() {
+
+    },
+
     getNewAdders: function() {
         this.incrementProperty("newRandom");
-        var threeNumbersFinal;
+        var number_one, number_two, number_three, three_numbers, threeNumbersFinal;
         var num_clicks = 0;
 
         do {
             num_clicks = 0;
-            var number_three = Math.floor(Math.random() * (this.get("goalNumber")));
-            var number_two = Math.floor(Math.random() * (this.get("goalNumber") / 10));
-            var number_one = Math.floor(Math.random() * this.get("goalNumber") / 100);
-            if (number_one = 0) {
-                number_one++;
-            }
-            if (number_two = 0) {
-                number_two++;
-            }
-            if (number_three = 0) {
-                number_three++;
-            }
+            number_three = Math.ceil(Math.random() * (this.get("goalNumber")));
+            number_two = Math.ceil(Math.random() * (this.get("goalNumber") / 10));
+            number_one = Math.ceil(Math.random() * this.get("goalNumber") / 100);
+
             console.log("Trying " + number_one + ", " + number_two + ", " + number_three);
-            var three_numbers = [number_one, number_two, number_three];
-            var threeNumbersFinal = [number_one, number_two, number_three];
+            three_numbers = [number_one, number_two, number_three];
+            threeNumbersFinal = [number_one, number_two, number_three];
 
             var largest = Math.max.apply(Math, three_numbers);
             var index_of_largest = three_numbers.indexOf(largest);
