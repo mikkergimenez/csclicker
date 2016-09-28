@@ -914,12 +914,10 @@ define("cs-clicker/routes/level", ["exports", "ember"], function (exports, _embe
         }
     });
 });
-define('cs-clicker/routes/levels', ['exports', 'ember'], function (exports, _ember) {
-    exports['default'] = _ember['default'].Route.extend({
+define("cs-clicker/routes/levels", ["exports", "ember"], function (exports, _ember) {
+    exports["default"] = _ember["default"].Route.extend({
         model: function model() {
-            return Array.apply(null, Array(10)).map(function (_, i) {
-                return i + 1;
-            });
+            return [1, 2, 3, 4, 5, "Random"];
         }
     });
 });
@@ -5935,7 +5933,7 @@ define("cs-clicker/templates/levels", ["exports"], function (exports) {
             var el1 = dom.createTextNode("        ");
             dom.appendChild(el0, el1);
             var el1 = dom.createElement("span");
-            dom.setAttribute(el1, "class", "col-xs-3 col-sm-2 col-md-1");
+            dom.setAttribute(el1, "class", "col-xs-6 col-sm-4 col-md-3");
             var el2 = dom.createTextNode("\n            ");
             dom.appendChild(el1, el2);
             var el2 = dom.createElement("div");
@@ -6109,7 +6107,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("cs-clicker/app")["default"].create({"name":"cs-clicker","version":"0.0.0+be0b92e8"});
+  require("cs-clicker/app")["default"].create({"name":"cs-clicker","version":"0.0.0+896f61e8"});
 }
 
 /* jshint ignore:end */
