@@ -33,7 +33,7 @@ define('cs-clicker/tests/controllers/level.jshint', ['exports'], function (expor
   QUnit.module('JSHint | controllers/level.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'controllers/level.js should pass jshint.\ncontrollers/level.js: line 152, col 36, Don\'t make functions within a loop.\n\n1 error');
+    assert.ok(false, 'controllers/level.js should pass jshint.\ncontrollers/level.js: line 190, col 36, Don\'t make functions within a loop.\n\n1 error');
   });
 });
 define('cs-clicker/tests/helpers/destroy-app', ['exports', 'ember'], function (exports, _ember) {
