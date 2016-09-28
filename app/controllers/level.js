@@ -1,12 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+    queryParams: ['hard'],
     currentNumber: 0,
     beat: false,
     wentOver: false,
     turns: 0,
     binaryNumber: false,
     decimalNumber: false,
+    goalSystem: "Decimal",
+    hard: false,
     hexadecimalNumber: false,
     maxLevel: 5,
     maxClicks: 15,
@@ -58,12 +61,50 @@ export default Ember.Controller.extend({
         }
     }.property("model.id"),
 
-    goalNumber: function() {
-        if (this.get("model")) {
-            return this.get("model").goalNumber;
-        } else {
-            return Math.floor(Math.random() * 1000);
+    getPrintableNumber: function(number) {
+        if (this.get("goalSystem") === "Binary") {
+            return number.toString(2);
         }
+
+        if (this.get("goalSystem") === "Hexadecimal") {
+            return number.toString(16);
+        }
+
+        return number;
+    },
+
+    printCurrentNumber: function() {
+        return this.getPrintableNumber(this.get("currentNumber"));
+    }.property("currentNumber"),
+
+    printGoalNumber: function() {
+        return this.getPrintableNumber(this.get("goalNumber"));
+    }.property("goalNumber"),
+
+    goalNumber: function() {
+        var goalNumber, systems;
+
+        if (this.get("model")) {
+            goalNumber = this.get("model").goalNumber;
+        } else {
+            goalNumber = Math.floor(Math.random() * 1000);
+        }
+
+        this.set("goalSystem", "Decimal");
+
+        systems = ["Binary", "Decimal", "Hexadecimal"];
+        if (this.get("hard")) {
+            var rand_num = Math.floor(Math.random() * 3);
+            if (rand_num === 3) {
+                rand_num = 2;
+            }
+            console.log("Setting goal System because hard " + rand_num + systems[rand_num] );
+
+            this.set("goalSystem", systems[rand_num]);
+        }
+
+        return goalNumber;
+
     }.property("model.goalNumber", "beat"),
 
     addBinaryNumber: function() {
@@ -129,17 +170,14 @@ export default Ember.Controller.extend({
                 if (workingGoalNumber + largest < this.get("goalNumber")) {
                     num_clicks += 1;
                     workingGoalNumber += largest;
-                    console.log("Hitting First Continue " + workingGoalNumber + " " + largest + " " + this.get("goalNumber"));
                     continue;
                 } else if (workingGoalNumber + secondLargest < this.get("goalNumber")) {
                     num_clicks += 1;
                     workingGoalNumber += secondLargest;
-                    console.log("Hitting Second Continue " + workingGoalNumber + " " + secondLargest + " " + this.get("goalNumber"));
                     continue;
                 } else if (workingGoalNumber + thirdLargest < this.get("goalNumber")) {
                     num_clicks += 1;
                     workingGoalNumber += thirdLargest;
-                    console.log("Hitting Third Continue " + workingGoalNumber + " " + thirdLargest + " " + this.get("goalNumber"));
                     continue;
                 } else {
                     num_clicks += 1;
@@ -162,7 +200,6 @@ export default Ember.Controller.extend({
         this.set("binaryNumber", threeNumbersFinal.pop());
         this.set("decimalNumber", threeNumbersFinal.pop());
         this.set("hexadecimalNumber", threeNumbersFinal.pop());
-        console.log("Finished setting Numbers");
     },
 
     tryFinish: function() {
