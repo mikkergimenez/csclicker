@@ -6107,7 +6107,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("cs-clicker/app")["default"].create({"name":"cs-clicker","version":"0.0.0+896f61e8"});
+  require("cs-clicker/app")["default"].create({"name":"cs-clicker","version":"0.0.0+bc95ef4d"});
 }
 
 /* jshint ignore:end */
